@@ -27,7 +27,7 @@ namespace NetMauiSvToolkit.ViewHandlers
 #if ANDROID
         CameraPreviewManager cameraManager;
 #elif IOS
-CameraPreviewManager cameraManager;
+        CameraPreviewManager cameraManager;
 #endif
 
         public CameraPreviewViewHandler() : base(CameraViewMapper)
