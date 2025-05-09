@@ -6,6 +6,10 @@ using NetMauiSvToolkit.Interfaces;
 using NetMauiSvToolkit.Platforms.Android;
 #elif IOS
 using NetMauiSvToolkit.Platforms.iOS;
+#elif MACCATALYST
+using NetMauiSvToolkit.Platforms.MacCatalyst;
+#elif WINDOWS
+using NetMauiSvToolkit.Platforms.Windows;
 #endif
 
 namespace NetMauiSvToolkit.ViewHandlers
@@ -27,6 +31,10 @@ namespace NetMauiSvToolkit.ViewHandlers
 #if ANDROID
         CameraPreviewManager cameraManager;
 #elif IOS
+        CameraPreviewManager cameraManager;
+#elif MACCATALYST
+        CameraPreviewManager cameraManager;
+#elif WINDOWS
         CameraPreviewManager cameraManager;
 #endif
 
